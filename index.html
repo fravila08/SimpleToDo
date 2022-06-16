@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./main.css">
+        <script src="./main.js"></script>
+        <title>Homework thursday</title>
+    </head>
+    <body>
+        <ul id="list"><strong><em>To do list:</em></strong>
+            <li><input type="checkbox">Thing one</li>
+            <li><input type="checkbox">Thing two</li>
+            <li><input type="checkbox">Thing three</li>
+            <li><input type="checkbox">Thing four</li>
+            <li><input type="checkbox">Thing five</li>
+        </ul>
+       
+        <form onsubmit="handleFormSubmit(event), event.preventDefault()">
+            <input id="newListInput" type="text" name="name" placeholder="Is there anything else you would like add?">
+            <button type="submit">Add</button>
+        </form>
+        <div>
+            <p id="output"></p>
+        </div>
+        <script>
+            seeList()
+        </script>
+    </body>
+</html>
